@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QUIZ</title>
+</head>
+<body>
+    
+    <nav>
+        <div>
+            <h4>QUIZ CONTROL DE PRESUPUESTO</h4>
+        </div>
+    </nav>
+
+    <center><div class="textBalance"><h2 id="jh">BALANCE </h2><p id="porcentajeBalance"></p></div></center>
+
+    <section>
+        <div class="section">
+            <center><h3>Cuestionario</h3></center><br>
+            <form id="form">
+                <div class="divForm">
+                    <h5>Selecciona Ingreso o Egreso</h5>
+                    <select name="kind" id="kind" required>
+                        <option value="ingreso">Ingreso</option>
+                        <option value="egreso">Egreso</option>
+                    </select>
+                </div>
+
+                <div class="divForm">
+                    <h5>Coloca la cantidad de dinero</h5>
+                    <input id="dinero" type="number" required>
+                </div>
+
+                <div class="divForm">
+                    <h5>Coloca la fecha</h5>
+                    <input id="fecha" type="date" required>
+                </div>
+
+                <div class="divForm">
+                    <h5>Coloca el comprobante</h5>
+                    <input id="file" type="file">
+                </div>
+
+                <div class="divForm">
+                    <textarea name="" id="descripcion" cols="30" rows="10" placeholder="Descripcion"></textarea>
+                </div>
+
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+
+            <div id="fatherChildren"></div>
+    </section>
+
+
+</body>
+<script src="main.js"></script>
+</html>
